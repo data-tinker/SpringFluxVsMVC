@@ -1,6 +1,6 @@
 ## Description
 This project consists of Spring MVC and Flux services and can be used to showcase the limitations of thread-per-request model.  
-Both services return random numbers, with a 2 seconds delay to simulate request processing.
+Both services return random numbers, with a 2 seconds delay to simulate request processing.  
 In addition, this project shows how to set up Gradle multi-project build.  
 
 ## How to Run
