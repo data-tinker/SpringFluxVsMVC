@@ -12,4 +12,4 @@ In addition, this project shows how to set up Gradle multi-project build.
 ## Results and Conclusions
 The p99 response time for the MVC service should be around 10 seconds, but for the Flux service this value would be around 2 seconds.  
 This situation happens because of thread starvation, MVC service runs out of available threads in the thread pool.  
-Flux service on the other hand doesn't have this issue, since it uses an event loop for handling requests.  
+Flux service on the other hand doesn't have this issue, since it uses an event loop for requests processing.  
