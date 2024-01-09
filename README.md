@@ -5,9 +5,11 @@ In addition, this project shows how to set up Gradle multi-project build.
 
 ## How to Run
 1. Run the MVC service: `./gradlew :mvc:bootRun`
-2. Make 1000 concurrent requests to the MVC service: `artillery quick --count 1000 -n 1 http://localhost:8091/api_mvc/random`
+2. Make 1000 concurrent requests to the MVC service: `artillery quick --count 1000 -n 1 http://localhost:8090/apirandom`
 3. Run the Flux service: `./gradlew :flux:bootRun`
-4. Make 1000 concurrent requests to the Flux service: `artillery quick --count 1000 -n 1 http://localhost:8092/api_flux/random`
+4. Make 1000 concurrent requests to the Flux service: `artillery quick --count 1000 -n 1 http://localhost:8091/api/random`
+5. Run the MVC with virtual threads service: `./gradlew :mvc-virtual:bootRun`
+4. Make 1000 concurrent requests to the Flux service: `artillery quick --count 1000 -n 1 http://localhost:8092/api/random`
 
 ## Results and Conclusions
 The p99 response time for the MVC service should be around 10 seconds, but for the Flux service this value would be around 2 seconds.  
