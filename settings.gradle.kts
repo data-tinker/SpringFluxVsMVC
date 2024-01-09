@@ -1,3 +1,3 @@
 rootProject.name = "mvc-vs-flux"
 
-include("common", "mvc", "flux")
+include("common", "mvc", "flux", "mvc-virtual")
