@@ -5,7 +5,7 @@ In addition, this project shows how to set up Gradle multi-project build.
 
 ## How to Run
 1. Run the MVC service: `./gradlew :mvc:bootRun`
-2. Make 1000 concurrent requests to the MVC service: `artillery quick --count 1000 -n 1 http://localhost:8090/apirandom`
+2. Make 1000 concurrent requests to the MVC service: `artillery quick --count 1000 -n 1 http://localhost:8090/api/random`
 3. Run the Flux service: `./gradlew :flux:bootRun`
 4. Make 1000 concurrent requests to the Flux service: `artillery quick --count 1000 -n 1 http://localhost:8091/api/random`
 5. Run the MVC with virtual threads service: `./gradlew :mvc-virtual:bootRun`
